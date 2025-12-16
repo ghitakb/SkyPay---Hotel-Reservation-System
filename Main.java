@@ -18,24 +18,29 @@ public class Main {
 			service.printAllUsers();
 			System.out.println("booking 1:");
 			try { service.bookRoom(1, 2, DateHelper.parseDate("30/06/2026"), DateHelper.parseDate("07/07/2026"));
+				System.out.println("Booking created successfully.");
 			} catch (Exception e) { System.out.println(e.getMessage()); }
 
 			System.out.println("booking 2:");
 			try { service.bookRoom(1, 2, DateHelper.parseDate("07/07/2026"), DateHelper.parseDate("30/06/2026"));
+				System.out.println("Booking created successfully.");
 			} catch (Exception e) { System.out.println(e.getMessage());
 			}
 			System.out.println("booking 3:");
 			try { service.bookRoom(1, 1, DateHelper.parseDate("07/07/2026"), DateHelper.parseDate("08/07/2026"));
+				System.out.println("Booking created successfully.");
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
 			}
 			System.out.println("booking 4:");
 			try { service.bookRoom(2, 1, DateHelper.parseDate("07/07/2026"), DateHelper.parseDate("09/07/2026"));
+				System.out.println("Booking created successfully.");
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
 			}
 			System.out.println("booking 5:");
 			try { service.bookRoom(2, 3, DateHelper.parseDate("07/07/2026"), DateHelper.parseDate("08/07/2026"));
+				System.out.println("Booking created successfully.");
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
 			}
